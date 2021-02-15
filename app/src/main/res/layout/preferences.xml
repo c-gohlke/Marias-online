@@ -1,0 +1,252 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/PreferenceView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:gravity="top"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/prefName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prefName"
+            android:layout_centerVertical="true"
+            android:textColor="@color/goldText"
+            android:layout_marginStart="10dp"
+            android:textSize="30sp"
+
+            ></TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toEndOf="@+id/prefName"
+            android:layout_alignParentEnd="true"
+            android:gravity="end"
+            android:layout_marginEnd="10dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/coin"
+                android:layout_gravity="center"
+                android:contentDescription="@string/coin"></ImageView>
+
+            <TextView
+                android:id="@+id/coinValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/coinValue"
+                android:textColor="@color/goldText"
+                android:layout_gravity="center"
+                android:textSize="30sp"></TextView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/rules_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:width="220dp"
+        android:height="50dp"
+        android:background="@drawable/button"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:onClick="onRules"
+        android:text="@string/rules_btn"
+        android:textColor="@color/goldText"
+        android:textSize="25sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="5dp"
+        android:gravity="center"
+        android:background="@drawable/button"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/changeDeck"
+            android:textColor="@color/goldText"
+            android:textSize="25sp"
+            ></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/deck1frame"
+                        android:layout_width="110dp"
+                        android:layout_height="150dp"
+                        android:contentDescription="@string/deck1frame"></ImageView>
+
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/backcard"
+                        android:contentDescription="@string/deck1"
+                        android:onClick="classicCard"></ImageView>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:textColor="@color/goldText"
+                        android:layout_gravity="center"
+                        android:text="@string/deck1price"></TextView>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/validdeck"
+                        android:contentDescription="@string/deck1coin"></ImageView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/deck2frame"
+                        android:layout_width="110dp"
+                        android:layout_height="150dp"
+                        android:contentDescription="@string/deck2frame"></ImageView>
+
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/backcardblack"
+                        android:contentDescription="@string/deck2"
+                        android:onClick="blackCard"></ImageView>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/deck2value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:textColor="@color/goldText"
+                        android:layout_gravity="center"
+                        android:text="@string/deck2price"></TextView>
+
+                    <ImageView
+                        android:id="@+id/deck2coin"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/coin"
+                        android:contentDescription="@string/deck2coin"></ImageView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/deck3frame"
+                        android:layout_width="110dp"
+                        android:layout_height="150dp"
+                        android:contentDescription="@string/deck3frame"></ImageView>
+
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/backcardmarias"
+                        android:contentDescription="@string/deck3"
+                        android:onClick="mariasCard"></ImageView>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/deck3value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:textColor="@color/goldText"
+                        android:layout_gravity="center"
+                        android:text="@string/deck3price"></TextView>
+
+                    <ImageView
+                        android:id="@+id/deck3coin"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/coin"
+                        android:contentDescription="@string/deck3coin"></ImageView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

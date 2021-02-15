@@ -1,0 +1,116 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/JoinView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/goldBack1"
+            android:layout_width="360dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:background="@drawable/edittext"
+            android:layout_gravity="center">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/created_game_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gameId"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:paddingTop="15dp"/>
+
+    </RelativeLayout>
+
+    <Spinner
+        android:id="@+id/spinner_gameID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"/>
+
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/goldBack2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/edittext"
+            android:layout_gravity="center">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/player1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/p1"
+                android:layout_margin="5dp"
+                android:textColor="@color/black"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/player2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/p2"
+                android:layout_margin="5dp"
+                android:textColor="@color/black"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/player3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/p3"
+                android:layout_margin="5dp"
+                android:textColor="@color/black"
+                android:textSize="30sp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/join_game_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="80dp"
+        android:width="220dp"
+        android:height="50dp"
+        android:background="@drawable/button"
+        android:gravity="center"
+        android:text="@string/join"
+        android:textColor="@color/goldText"
+        android:textSize="25sp" />
+
+</LinearLayout>

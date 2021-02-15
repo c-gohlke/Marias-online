@@ -1,0 +1,17 @@
+<!-- fragment_edit_name.xml -->
+
+
+<TextView
+    android:height="200dp"
+    android:width="250dp"
+    android:background="@drawable/button"
+    android:gravity="center"
+    android:id="@+id/join_fragment_message"
+    android:layout_gravity="center"
+    android:text="Please wait for the host to start the game"
+    android:padding="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/goldText"
+    android:textSize="30sp"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

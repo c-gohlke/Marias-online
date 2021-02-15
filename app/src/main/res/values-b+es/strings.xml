@@ -1,0 +1,30 @@
+<resources>
+    <string name = "register">Registrarse</string>
+    <string name = "register_username">Nombre de usuario</string>
+    <string name = "register_password">Contraseña</string>
+    <string name = "register_email">Correo electrónico</string>
+    <string name = "login">Iniciar sesión</string>
+    <string name = "logout">Cerrar sesión</string>
+    <string name = "rules_btn">Reglas</string>
+    <string name = "join">Unirse</string>
+    <string name = "start_game">Iniciar juego</string>
+    <string name = "add_bot">Agregar bot</string>
+    <string name = "new_game">Nuevo juego</string>
+    <string name = "login_password">Contraseña</string>
+    <string name = "login_username">Nombre de usuario</string>
+    <string name = "gameId">ID del juego</string>
+    <string name = "preferences">Preferencias</string>
+    <string name = "leave_game_button">Salir del juego</string>
+    <string name = "reconnect_button">Vuelve a conectarte al juego anterior</string>
+    <string name = "reconnect_view">Vuelva a conectar</string>
+    <string name="rules">
+        \tMarias is a card game for three players. It is played with 32-cards Bohemian or German pack. Every time one player is playing against other two (he is called \`forhont\`). This position is passing after each play to next, clockwise sitting, player. Cards are not shuffled, only once at the beginning of the game.
+
+        At the beginning of the play forhont gets seven cards, others get five. Forhont chooses one card as \`Trump\` card, then he gets another five cards and others get five cards as well. Cards are served from forhont in clockwise order. After receiving five cards forhot chooses two other cards as `talon`. Talon are two cards which are not played during the play. Forhont can not choose as talon any cards from aces, 10s or \`trump\` colour (any card within the same colour as Trump card).
+
+
+        Goal of each play is to get maximum points possible. Points are awarded after taking pointed cards - Aces and 10s. Every pointed card stands for 10 points. Last 10 points are awarded to a player winning the last hand. Points of two players playing against forhont sum together.
+
+        If a player has Q and K of one colour (this combination is called \`Marias\`) he plays Q first and he is awarded additional 20 points for non-trump colour and 40 for trump colour.
+    </string>
+</resources>

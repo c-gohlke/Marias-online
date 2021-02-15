@@ -1,0 +1,20 @@
+<resources>
+    <string name="register">Registrieren</string>
+    <string name="register_username">Benutzername</string>
+    <string name="register_password">Passwort</string>
+    <string name="register_email">Email</string>
+    <string name="login">Anmelden</string>
+    <string name="logout">Abmelden</string>
+    <string name="rules_btn">Regeln</string>
+    <string name="join">Beitreten</string>
+    <string name="start_game">Spiel anfangen</string>
+    <string name="add_bot">Bot hinzufügen</string>
+    <string name="new_game">Neues Spiel</string>
+    <string name="login_username">Benutzername</string>
+    <string name="login_password">Passwort</string>
+    <string name="gameId">Spiel ID</string>
+    <string name="preferences">Einstellungen</string>
+    <string name="leave_game_button">Spiel verlassen</string>
+    <string name="reconnect_button">Neu verbinden</string>
+    <string name="reconnect_view">Verbinden</string>
+</resources>

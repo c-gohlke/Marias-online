@@ -1,0 +1,445 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game"
+    android:tag="GameView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/leave_game_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/exit"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button"
+        android:padding="8dp"
+        android:onClick="onLeave"
+        android:contentDescription="@string/leave_game_button"></ImageButton>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" >
+            </Space>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/player2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/goldText"
+                    android:textSize="30sp"
+                    android:text="@string/p2"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+
+                <ImageView
+                    android:id="@+id/cardbackp2"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/tenbackcard"
+                    android:contentDescription="@string/p2hand"/>
+
+                <TextView
+                    android:id="@+id/scoreplayer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/goldText"
+                    android:textSize="30sp"
+                    android:text="@string/score2"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/mariasfrontp2"
+                        android:layout_width="55dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/emptycard"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@string/marias1"/>
+
+                    <ImageView
+                        android:id="@+id/mariasbackp2"
+                        android:layout_width="80dp"
+                        android:layout_height="55dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/emptycardsideways"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@string/marias2"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="5" >
+            </Space>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/player3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/goldText"
+                    android:textSize="30sp"
+                    android:text="@string/p3"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+
+                <ImageView
+                    android:id="@+id/cardbackp3"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/tenbackcard"
+                    android:contentDescription="@string/p3hand" />
+
+                <TextView
+                    android:id="@+id/scoreplayer3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/goldText"
+                    android:textSize="30sp"
+                    android:text="@string/score3"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/mariasfrontp3"
+                        android:layout_width="55dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/emptycard"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@string/marias1"/>
+
+                    <ImageView
+                        android:id="@+id/mariasbackp3"
+                        android:layout_width="80dp"
+                        android:layout_height="55dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/emptycardsideways"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@string/marias2"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" >
+            </Space>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"></Space>
+
+        <RelativeLayout
+            android:layout_width="250dp"
+            android:layout_height="120dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/played1"
+                android:layout_width="80dp"
+                android:layout_height="120dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/emptycard"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/played1"/>
+
+            <ImageView
+                android:id="@+id/played2"
+                android:layout_width="80dp"
+                android:layout_height="120dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/emptycard"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/played2"/>
+
+            <ImageView
+                android:id="@+id/played3"
+                android:layout_width="80dp"
+                android:layout_height="120dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/emptycard"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:contentDescription="@string/played3"/>
+
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"></Space>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:weightSum="4">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.1">
+
+                <ImageView
+                    android:id="@+id/mariasfrontp1"
+                    android:layout_width="55dp"
+                    android:layout_height="80dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/emptycard"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/marias1"/>
+
+                <ImageView
+                    android:id="@+id/mariasbackp1"
+                    android:layout_width="80dp"
+                    android:layout_height="55dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/emptycardsideways"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/marias2"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/scoreplayer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/score1"
+                android:textColor="@color/goldText"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:id="@+id/trump"
+                android:layout_width="49dp"
+                android:layout_height="75dp"
+                android:src="@drawable/emptycard"
+                android:contentDescription="@string/trump"
+                android:layout_weight="1.9" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColor="@color/goldContainer"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/edittext"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/card1"
+                    android:layout_width="65dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/emptycard"
+                    android:contentDescription="@string/card1"/>
+
+                <ImageView
+                    android:id="@+id/card2"
+                    android:layout_width="65dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/emptycard"
+                    android:contentDescription="@string/card2"/>
+
+                <ImageView
+                    android:id="@+id/card3"
+                    android:layout_width="65dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/emptycard"
+                    android:contentDescription="@string/card3"/>
+
+                <ImageView
+                    android:id="@+id/card4"
+                    android:layout_width="65dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/emptycard"
+                    android:contentDescription="@string/card4"/>
+
+                <ImageView
+                    android:id="@+id/card5"
+                    android:layout_width="65dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/emptycard"
+                    android:contentDescription="@string/card5"/>
+
+                <ImageView
+                    android:id="@+id/card6"
+                    android:layout_width="65dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/emptycard"
+                    android:contentDescription="@string/card6"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:id="@+id/card7"
+                    android:layout_width="65dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/emptycard"
+                    android:contentDescription="@string/card7"/>
+
+                <ImageView
+                    android:id="@+id/card8"
+                    android:layout_width="65dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/emptycard"
+                    android:contentDescription="@string/card8"/>
+
+                <ImageView
+                    android:id="@+id/card9"
+                    android:layout_width="65dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/emptycard"
+                    android:contentDescription="@string/card9"/>
+
+                <ImageView
+                    android:id="@+id/card10"
+                    android:layout_width="65dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/emptycard"
+                    android:contentDescription="@string/card10"/>
+
+                <ImageView
+                    android:id="@+id/card11"
+                    android:layout_width="65dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/emptycard"
+                    android:contentDescription="@string/card11"/>
+
+                <ImageView
+                    android:id="@+id/card12"
+                    android:layout_width="65dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/emptycard"
+                    android:contentDescription="@string/card12"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/animationP2"
+        android:layout_width="49dp"
+        android:layout_height="75dp"
+        android:src="@drawable/backcard"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="35dp"
+        android:contentDescription="@string/p2handanimation"
+        android:alpha="0">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/tarAnimP2"
+        android:layout_width="49dp"
+        android:layout_height="75dp"
+        android:src="@drawable/backcard"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="35dp"
+        android:contentDescription="@string/p2handanimation"
+        android:alpha="0">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/animationP3"
+        android:layout_width="49dp"
+        android:layout_height="75dp"
+        android:src="@drawable/backcard"
+        android:layout_marginStart="305dp"
+        android:layout_marginTop="35dp"
+        android:contentDescription="@string/p3handanimation"
+        android:alpha="0">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/tarAnimP3"
+        android:layout_width="49dp"
+        android:layout_height="75dp"
+        android:src="@drawable/backcard"
+        android:layout_marginStart="305dp"
+        android:layout_marginTop="35dp"
+        android:contentDescription="@string/p3handanimation"
+        android:alpha="0">
+    </ImageView>
+
+</RelativeLayout>

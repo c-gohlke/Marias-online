@@ -1,0 +1,110 @@
+<resources>
+    <string name="register">Register</string>
+    <string name="register_username">Username</string>
+    <string name="register_password">Password</string>
+    <string name="register_email">Email</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="rules_btn">Rules</string>
+    <string name="join">Join</string>
+    <string name="start_game">Start Game</string>
+    <string name="add_bot">Add Bot</string>
+    <string name="new_game">New Game</string>
+    <string name="login_password">Password</string>
+    <string name="login_username">Username</string>
+    <string name="gameId">Game Id</string>
+    <string name="preferences">Preferences</string>
+    <string name="leave_game_button">Leave Game</string>
+    <string name="reconnect_button">Reconnect to previous game</string>
+    <string name="reconnect_view">Reconnect</string>
+    <string name="rules" translatable="false">
+        RULES
+    </string>
+    <string name="rules1" translatable="false">
+        Marias is a card game for three players. It is played with 32-cards Bohemian or German pack.
+        Every time one player is playing against other two (he is called \`forhont\`).
+        This position is passing after each play to next, clockwise sitting, player.
+        Cards are not shuffled, only once at the beginning of the game.
+    </string>
+    <string name="rules2" translatable="false">
+        At the beginning of the play forhont gets seven cards, others get five. Forhont chooses one card as \`Trump\` card, then he gets another five cards and others get five cards as well. Cards are served from forhont in clockwise order. After receiving five cards forhot chooses two other cards as `talon`. Talon are two cards which are not played during the play. Forhont can not choose as talon any cards from aces, 10s or \`trump\` colour (any card within the same colour as Trump card).
+    </string>
+    <string name="rules3" translatable="false">
+         After forhont chooses talon he shows Trump card to others so, thus, they know what is a trump colour.
+    </string>
+    <string name="rules4" translatable="false">
+        Play is done by exchange of \`hands\`.
+        Exchange start with forhont at the beginning or with a player, who won previous hand.
+        During exchange each player puts one card on table.
+        Players puts cards on the table in clockwise order.\n
+    </string>
+    <string name="rules5" translatable="false">
+        First player in the hand chooses colour of the hand by his car.
+        Every other player playing after him must play higher card in the same colour.
+        If the player doesn\'t have higher card but at least the came colour card he must play it.
+        If he\doesn\'t have any card in the same colour but he has trump colour cards,
+        he plays one of them (next player must play higher thump card if he has it and has  no hand colour).
+        If the player doesn\'t have the same colour nor trump colour cards he can choose any card he wants to play.
+    </string>
+    <string name="rules6" translatable="false">
+        Order of cards is as follows by its value: 7, 8, 9, J, Q, K, 10, A.
+    </string>
+    <string name="rules7" translatable="false">
+        Goal of each play is to get maximum points possible.
+        Points are awarded after taking pointed cards - Aces and 10s.
+        Every pointed card stands for 10 points.
+        Last 10 points are awarded to a player winning the last hand.
+        Points of two players playing against forhont sum together.
+    </string>
+    <string name="rules8" translatable="false">
+        If a player has Q and K of one colour (this combination is called \`Marias\`)
+        he plays Q first and he is awarded additional 20 points for non-trump colour and 40 for trump colour.
+    </string>
+    <string name="app_name" translatable="false">Marias Online</string>
+    <string name="p1" translatable="false"></string>
+    <string name="p2" translatable="false"></string>
+    <string name="p3" translatable="false"></string>
+    <string name="score1" translatable="false">score 1</string>
+    <string name="score2" translatable="false">score 2</string>
+    <string name="score3" translatable="false">score 3</string>
+    <string name="p2hand" translatable="false">p2 hand</string>
+    <string name="p2handanimation" translatable="false">p2 hand</string>
+    <string name="p3hand" translatable="false">p3 hand</string>
+    <string name="p3handanimation" translatable="false">p2 hand</string>
+    <string name="marias1" translatable="false">marias first card</string>
+    <string name="marias2" translatable="false">marias second card</string>
+    <string name="played1" translatable="false">first played card</string>
+    <string name="played2" translatable="false">second played card</string>
+    <string name="played3" translatable="false">third played card</string>
+    <string name="trump" translatable="false">trump</string>
+    <string name="card1" translatable="false">card 1</string>
+    <string name="card2" translatable="false">card 2</string>
+    <string name="card3" translatable="false">card 3</string>
+    <string name="card4" translatable="false">card 4</string>
+    <string name="card5" translatable="false">card 5</string>
+    <string name="card6" translatable="false">card 6</string>
+    <string name="card7" translatable="false">card 7</string>
+    <string name="card8" translatable="false">card 8</string>
+    <string name="card9" translatable="false">card 9</string>
+    <string name="card10" translatable="false">card 10</string>
+    <string name="card11" translatable="false">card 11</string>
+    <string name="card12" translatable="false">card 12</string>
+    <string name="not_set" translatable="false">User: not set</string>
+    <string name="interstitial_ad_unit_id" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="coin" translatable="false">coin</string>
+    <string name="coinValue" translatable="false">: 100</string>
+    <string name="prefName" translatable="false">Name</string>
+    <string name="deck1" translatable="false">deck1</string>
+    <string name="deck2" translatable="false">deck2</string>
+    <string name="deck3" translatable="false">deck3</string>
+    <string name="deck1frame" translatable="false">deck1</string>
+    <string name="deck2frame" translatable="false">deck2</string>
+    <string name="deck3frame" translatable="false">deck3</string>
+    <string name="deck1price" translatable="false"></string>
+    <string name="deck2price" translatable="false">30 </string>
+    <string name="deck3price" translatable="false">50 </string>
+    <string name="deck1coin" translatable="false">deck1</string>
+    <string name="deck2coin" translatable="false">deck2</string>
+    <string name="deck3coin" translatable="false">deck3</string>
+    <string name="changeDeck" translatable="false">Change Deck</string>
+</resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "704059185691",
+    "project_id": "mariasonline-a592c",
+    "storage_bucket": "mariasonline-a592c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704059185691:android:c47385ccfbf58c6d3536be",
+        "android_client_info": {
+          "package_name": "fr.eurecom.marias_client"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "704059185691-he4dsgsb2l2g1tfjscu35dmeapqu007t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzZU1f3efWwFp0QTWkPi0wJP8wCmJCEk0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "704059185691-he4dsgsb2l2g1tfjscu35dmeapqu007t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

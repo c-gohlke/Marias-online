@@ -1,0 +1,83 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RegisterView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    >
+
+    <TextView
+        android:id="@+id/responseTextRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/usernameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/register_username"
+        android:width="300dp"
+        android:padding="10dp"
+        android:background="@drawable/edittext"
+        android:layout_gravity="center"
+        android:layout_marginTop="275dp"
+        android:autofillHints=""
+        android:inputType="text"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/register_password"
+        android:width="300dp"
+        android:padding="10dp"
+        android:background="@drawable/edittext"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:autofillHints=""
+        android:inputType="textPassword"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/register_email"
+        android:width="300dp"
+        android:padding="10dp"
+        android:background="@drawable/edittext"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:autofillHints=""
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"/>
+
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:width="220dp"
+        android:height="50dp"
+        android:background="@drawable/button"
+        android:gravity="center"
+        android:onClick="register"
+        android:text="@string/register"
+        android:textColor="@color/goldText"
+        android:textSize="25sp"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="30dp" />
+
+</LinearLayout>

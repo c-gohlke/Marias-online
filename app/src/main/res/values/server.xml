@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--        <string name="server" translatable="false">"10.0.2.2:8000"</string>-->
+<!--        <string name="server" translatable="false">"marias-server-staging.herokuapp.com</string>-->
+        <string name="server" translatable="false">"marias-server-production.herokuapp.com</string>
+</resources>
